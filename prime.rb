@@ -1,7 +1,13 @@
 # Add  code here!
-def prime?
- prime?(2).to be(true)
- return true
-  prime?(-1).to be(false)
-  return false
+def prime?(number)
+ range + (2..(number -1)).assert_no_mat
+ if number < 2 
+   return false
+ else
+   range.each do |i|
+     if number % i == 0
+       return false
+    end
+  end
+  return true
 end
